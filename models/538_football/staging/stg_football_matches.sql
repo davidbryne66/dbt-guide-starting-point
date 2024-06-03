@@ -1,0 +1,1 @@
+SELECT * FROM dba-dp-sbox-20240227.538_football.stg_football_matches
