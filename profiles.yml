@@ -1,0 +1,13 @@
+dba-dp-sbox:
+  target: dev
+  outputs:
+    dev:
+      type: bigquery
+      method: service-account
+      project: dba-dp-sbox-20240227
+      dataset: dbt_adedeji # Replace this with dbt_your_name, e.g. dbt_bob
+      threads: 4
+      timeout_seconds: 300
+      location: US
+      priority: interactive
+      keyfile: "{{ env_var('BIGQUERY_KEYFILE') }}"
